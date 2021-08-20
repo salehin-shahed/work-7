@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.door {
+    text-align: center;
+    margin-top: 20px;
+    color: midnightblue;
+}
+
+.title {
+    background: rgb(231, 179, 176);
+    padding: 10px 0;
+    width: 50%;
+    margin: auto;
+}
+
+.text {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.write {
+    font-size: 30px;
+    color: #693838;
+    text-align: justify;
+    background: #f1dddd;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.write::before {
+    content: "";
+    width: 50%;
+    height: 92%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fafafa;
+}
+
+.write:hover::before {
+    width: 0;
+    transition: 1s;
+}
+
+.write::after {
+    content: "";
+    width: 50%;
+    height: 92%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fafafa;
+}
+
+.write:hover::after {
+    width: 0;
+    transition: 1s;
+}
